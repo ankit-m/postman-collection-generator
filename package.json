@@ -4,16 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test-lint": "eslint lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ankit-m/postman-collection-generator.git"
+  },
+  "bin": {
+    "postman-collection-generator": "./index.js"
   },
   "author": "Ankit Muchhala",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ankit-m/postman-collection-generator/issues"
   },
-  "homepage": "https://github.com/ankit-m/postman-collection-generator#readme"
+  "homepage": "https://github.com/ankit-m/postman-collection-generator#readme",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "eslint": "4.7.1",
+    "eslint-config-google": "0.9.1",
+    "mocha": "4.0.1"
+  },
+  "dependencies": {
+    "async": "2.5.0",
+    "commander": "2.11.0",
+    "lodash": "4.17.4",
+    "postman-collection": "2.1.3",
+    "rc": "1.2.1",
+    "request": "2.83.0"
+  }
 }
